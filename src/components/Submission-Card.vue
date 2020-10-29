@@ -44,7 +44,7 @@ export default {
 .sub-detail {
 	max-width: 210px;
 	position: fixed;
-	left: 50px;
-	top: 80px;
+	left: 20px;
+	top: 10vh;
 }
 </style>

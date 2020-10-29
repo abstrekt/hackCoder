@@ -8,7 +8,7 @@ import { codemirror } from 'vue-codemirror';
 import 'codemirror/lib/codemirror.css';
 
 // import language js
-import 'codemirror/mode/javascript/javascript.js';
+import 'codemirror/mode/clike/clike.js';
 
 // import theme style
 import 'codemirror/theme/base16-dark.css';
@@ -18,14 +18,31 @@ import 'codemirror/theme/base16-dark.css';
 export default {
 	data() {
 		return {
-			code: 'const a = 10',
+			code: `vector<bool> checkArithmeticSubarrays(vector<int>& nums, vector<int>& l, vector<int>& r) {
+    vector<bool> res;
+    for (auto i = 0; i < l.size(); ++i) {
+        if (r[i] - l[i] < 2)
+            res.push_back(true);
+        else {
+            vector<int> n(begin(nums) + l[i], begin(nums) + r[i] + 1);
+            int j = 2;
+            sort(begin(n), end(n));
+            for (; j < n.size(); ++j)
+                if (n[j] - n[j - 1] != n[1] - n[0])
+                    break;
+            res.push_back(j == n.size());
+        }
+    }
+    return res;
+}`,
 			cmOptions: {
 				tabSize: 4,
-				mode: 'text/javascript',
+				mode: 'text/x-c++src',
 				theme: 'base16-dark',
 				lineNumbers: true,
 				line: true,
-				// more CodeMirror options...
+				lineWrapping: true,
+				readOnly: true,
 			},
 		};
 	},
@@ -47,3 +64,12 @@ export default {
 	},
 };
 </script>
+
+<style>
+.CodeMirror {
+	height: 600px;
+	width: auto;
+	padding: 10px;
+	border-radius: 5px;
+}
+</style>
