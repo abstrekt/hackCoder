@@ -14,6 +14,7 @@
 			:items="submissions"
 			:items-per-page="10"
 			:search="search"
+			@click:row="viewSubmission"
 		>
 		</v-data-table>
 	</v-card>
@@ -58,5 +59,16 @@ export default {
 			submissions: this.$store.state.all_submissions,
 		};
 	},
+	methods: {
+		viewSubmission(item) {
+			this.$router.push(`/submissions/${item.id}`);
+		},
+	},
 };
 </script>
+
+<style lang="scss" scoped>
+	::v-deep tbody tr {
+		cursor: pointer;
+	}
+</style>
