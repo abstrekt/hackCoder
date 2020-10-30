@@ -4,6 +4,11 @@
 		<v-card-text>
 			<h3 class="">Status: {{ details.result }}</h3>
 			<br />
+			<div class="">
+				<strong>Problem Name:</strong> <br />
+				{{ details.problem }}
+			</div>
+			<br />
 			<div class=""><strong>10 / 10</strong> test cases passed.</div>
 			<div class="">
 				Runtime: <strong>{{ details.runtime }}</strong>
