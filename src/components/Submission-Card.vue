@@ -9,7 +9,13 @@
 				{{ details.problem }}
 			</div>
 			<br />
-			<div class=""><strong>10 / 10</strong> test cases passed.</div>
+			<div class="">
+				<strong>
+					{{ details.test_cases[0] }} /
+					{{ details.test_cases[1] }}</strong
+				>
+				test cases passed.
+			</div>
 			<div class="">
 				Runtime: <strong>{{ details.runtime }}</strong>
 			</div>

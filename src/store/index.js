@@ -9,19 +9,21 @@ const state = {
 			time: '1 month ago',
 			problem: 'Reverse a binary tree',
 			result: 'Wrong Answer',
-			runtime: '24ms',
-			memory: '290MB',
-      language: 'Python3',
-      id:'1'
+			runtime: 'NA',
+			memory: 'NA',
+			language: 'C++',
+			id: '1',
+			test_cases: [4, 10],
 		},
 		{
 			time: '2 month ago',
 			problem: 'House Robbers II',
 			result: 'Runtime Error',
-			runtime: '24ms',
-			memory: '291MB',
-      language: 'Python3',
-      id:'2'
+			runtime: 'NA',
+			memory: 'NA',
+			language: 'C++',
+			id: '2',
+			test_cases: [0, 10],
 		},
 		{
 			time: '3 weeks agp',
@@ -29,26 +31,29 @@ const state = {
 			result: 'Accepted',
 			runtime: '24ms',
 			memory: '292MB',
-      language: 'Python3',
-      id:'3'
+			language: 'C++',
+			id: '3',
+			test_cases: [10, 10],
 		},
 		{
 			time: '4 weeks ago',
 			problem: 'Reverse a binary tree',
 			result: 'Time Limit Exceeded',
-			runtime: '21ms',
-			memory: '293MB',
-      language: 'Python3',
-      id:'4'
+			runtime: 'NA',
+			memory: 'NA',
+			language: 'C++',
+			id: '4',
+			test_cases: [0, 10],
 		},
 		{
 			time: '1 month ago',
-			problem: 'Memory Limit Exceeded',
-			result: 'Accepted',
-			runtime: '24ms',
-			memory: '294MB',
-      language: 'Python3',
-      id:'5'
+			problem: 'Minimum Path Sum',
+			result: 'Memory Limit Exceeded',
+			runtime: 'NA',
+			memory: 'NA',
+			language: 'C++',
+			id: '5',
+			test_cases: [5, 10],
 		},
 		{
 			time: '1 month ago',
@@ -56,8 +61,9 @@ const state = {
 			result: 'Accepted',
 			runtime: '24ms',
 			memory: '295MB',
-      language: 'Python3',
-      id:'6'
+			language: 'C++',
+			id: '6',
+			test_cases: [10, 10],
 		},
 		{
 			time: '1 month ago',
@@ -65,8 +71,9 @@ const state = {
 			result: 'Accepted',
 			runtime: '25ms',
 			memory: '190MB',
-      language: 'Perl',
-      id:'7'
+			language: 'C++',
+			id: '7',
+			test_cases: [10, 10],
 		},
 		{
 			time: '5 month ago',
@@ -74,8 +81,9 @@ const state = {
 			result: 'Accepted',
 			runtime: '24ms',
 			memory: '296MB',
-      language: 'Java',
-      id:'8'
+			language: 'C++',
+			id: '8',
+			test_cases: [10, 10],
 		},
 		{
 			time: '1 year ago',
@@ -83,8 +91,9 @@ const state = {
 			result: 'Accepted',
 			runtime: '22ms',
 			memory: '497MB',
-      language: 'Python3',
-      id:'9'
+			language: 'C++',
+			id: '9',
+			test_cases: [10, 10],
 		},
 	],
 };
