@@ -1,6 +1,8 @@
 <template>
-	<v-card>
+	<v-card class="all_submissions mt-md-16 mt-7">
 		<v-card-title>
+			All Submissions for Contenst: "Beta-0"
+			<v-spacer></v-spacer>
 			<v-text-field
 				v-model="search"
 				append-icon="mdi-magnify"
@@ -68,7 +70,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-	::v-deep tbody tr {
-		cursor: pointer;
-	}
+::v-deep tbody tr {
+	cursor: pointer;
+}
+.all_submissions {
+	width: 90%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
 </style>
