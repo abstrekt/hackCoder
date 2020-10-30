@@ -20,7 +20,7 @@
 			</div>
 		</v-card-text>
 		<v-card-actions>
-			<v-btn text color="deep-purple accent-4">
+			<v-btn text @click="goBack" color="deep-purple accent-4">
 				Go Back
 			</v-btn>
 		</v-card-actions>
@@ -36,6 +36,11 @@ export default {
 				item => item.id == this.$route.params.id
 			),
 		};
+	},
+	methods: {
+		goBack() {
+			this.$router.push(`/submissions`);
+		},
 	},
 };
 </script>
