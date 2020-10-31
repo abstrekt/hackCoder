@@ -28,3 +28,4 @@ npm run build
 ```
 
 ### Project Preview
+![Alt Text](https://imgur.com/OKZSt9O.gif)
